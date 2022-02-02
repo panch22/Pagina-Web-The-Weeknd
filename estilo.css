@@ -56,11 +56,13 @@ header {
 
 body {
     margin: 0;
+    width: 100%;
 }
 
 footer {
     margin-bottom: 0px;
     background-color: white;
+    margin-left: 100px;
 }
 
 footer p {
@@ -71,7 +73,7 @@ footer p {
 
 #redesSociales img{
     height: 30px;
-    padding: 30px;
+    padding: 10px;
     display: inline-block;
     margin-left: 200px;
 }
@@ -81,9 +83,6 @@ h3 {
     font-family: 'Anton', sans-serif;
 }
 
-#historia {
-    background-color: black;
-}
 
 .listaConciertos {
     margin-left: 100px;
@@ -91,11 +90,18 @@ h3 {
     border-bottom: 3px solid black;
 }
 
-.listaConciertos h1, p {
+.listaConciertos2 {
+    margin-bottom: 100px;
+    margin-right: 600px;
+}
+
+.listaConciertos h1, p,
+.listaConciertos2 input {
     font-family: 'Anton', sans-serif;
 }
 
-.listaConciertos input{
+.listaConciertos input,
+.listaConciertos2 input{
     font-size: 20px;
     font-family: 'Anton', sans-serif;
     border-radius: 10px;
@@ -107,7 +113,7 @@ h3 {
 }
 
 #mapas iframe {
-    margin-left: 200px;
+    margin-left: 100px;
     margin-top: 50px;
 }
 
@@ -132,44 +138,6 @@ h3 {
     margin-left: 50px;
 }
 
-aside {
-    float: right;
-}
-
-.slider {
-    width: 50%;
-    margin-right: 0px;
-    overflow: hidden;
-    margin-left: 450px;
-}
-
-.slider ul {
-    display: flex;
-    padding: 0;
-    width: 400%;
-    animation: cambio 20s infinite;
-}
-
-.slider ul li {
-    width: 100%;
-    list-style-type: none;
-}
-
-.slider img {
-    width: 70%;
-}
-
-@keyframes cambio {
-    0% {margin-left: 0px;}
-    20% {margin-left: 0px;}
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
-    50% {margin-left: -200%;}
-    70% {margin-left: -200%;}
-    75% {margin-left: -300%;}
-    100% {margin-left: -300%;}
-}
-
 #cuadros {
     position: absolute;
     border: 3px solid black;
@@ -182,7 +150,7 @@ aside {
 }
 
 #cuadros p {
-    padding-left: 30px;
+    padding-left: 20px;
     padding-right: 50px;
     margin-top: 20px;
     text-align: justify;
@@ -194,7 +162,7 @@ aside {
 #cuadros2 p,
 #cuadros3 p {
     margin-top: 20px;
-    padding-left: 30px;
+    padding-left: 20px;
     padding-right: 50px;
     text-align: justify;
     font-weight: 200;
@@ -267,4 +235,153 @@ aside {
 
 #mapas2 {
     margin-left: 250px;
+}
+
+/* ESTILO DANIÈ */
+
+/*TIENDA*/
+.TiendaFuente {
+    font-family: 'Staatliches', cursive;
+}
+
+
+/* FORMULARIO */
+#anchoForm{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.text {
+    font-size:28px;
+    color:rgb(27, 27, 26);
+  }
+  .parpadea {
+    color:white;
+    margin-left: 30px;
+    animation-name: parpadeo;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  @keyframes parpadeo {  
+    0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  } 
+
+/* FONDO  */
+#formFanpage,
+#formFanpage fieldset,
+#formFanpage label,
+#formFanpage input,
+#formFanpage select,
+#formFanpage select#nacion option{
+    /* CENTRAR margin: 0 auto; */
+    font-family: 'Staatliches', cursive;
+    background-image: url(img/fanpage/gigante_normal.jpg);
+    filter: grayscale(95%);
+    background-repeat: no-repeat;
+    /* display: inline-block; */
+    /* transition:all .5s ease-in-out; */
+    color: lightyellow;
+    /* text-decoration: yellow thistle; */
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+#formFanpage label,
+#formFanpage input,
+#formFanpage select {
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+/* BOTON */
+
+#enviar:hover{
+    /* box-shadow: 3px 3px 3px yellow; */
+    box-shadow: 0 12px 16px 0 whitesmoke;
+    transform: scale(1.2);
+    margin-right: .5em;
+}
+
+
+/* DISCO */
+/* MULTIMEDIA */
+#multimedia video{
+    padding-top: 2em;
+    margin-left: 25%;
+    width: 50%;
+    height: fit-content;
+}
+/* FOTO TEXTO */
+.fotoTexto{
+    border-right: 2px solid lightgray;
+	border-bottom: 2px solid lightgray;
+	padding-right: 5em;
+	padding-bottom: 5em;
+    margin-top: 2em;  
+    display: flex;
+    text-align: justify;
+}
+.fotoTexto p{
+padding: 2em;
+}
+a img.fotosDiscos{
+    width: 30em;
+    margin: 0 auto;   
+}
+.fotosDiscos:hover{
+    transform: scale(1.2);
+}
+
+/* TITULOS */
+.tituloh3{
+    background: linear-gradient(to right, white, grey);  
+    font-size: 3em;
+
+}
+.tituloh4{
+    font-family: 'Staatliches', cursive;
+    margin: 2em;
+    font-size: 2em;
+    text-shadow: 7px 7px #bac2be;
+}
+
+/* SUBMENU */
+#subMenu{
+    font-family: 'Staatliches', cursive;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    background-color: white;
+}
+#subMenu h1 {
+    font-family: 'Staatliches', cursive;
+    font-size: 70px;
+}
+#subMenu {
+    font-family: 'Staatliches', cursive;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    background-color: white;
+}
+#subMenu ul {
+    list-style-type: none;
+    display: inline-block;
+}
+#subMenu ul li {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: inline-block;
+}
+#subMenu ul li a {
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+}
+#subMenu ul li a:hover {
+    color: black;
+    box-shadow: 0px 3px black;
 }
